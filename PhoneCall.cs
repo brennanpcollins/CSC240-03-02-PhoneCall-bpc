@@ -1,8 +1,8 @@
 ﻿using System;
-
+using static System.Console;
 namespace CSC240_03_02_PhoneCall_bpc
 {
-    class Program
+    class PhoneCall
     {
         static void Main(string[] args)
         {
