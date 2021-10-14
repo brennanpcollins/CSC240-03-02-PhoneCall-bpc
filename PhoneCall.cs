@@ -4,9 +4,13 @@ namespace CSC240_03_02_PhoneCall_bpc
 {
     class PhoneCall
     {
-        static void Main(string[] args)
+        private static double CalcPhoneCallPrice(int minutes, double rate)
         {
-            Console.WriteLine("Hello World!");
+            const double BASE_FEE = 0.25;
+            double callFee;
+            callFee = BASE_FEE + minutes * rate;
+            return callFee;
         }
+        
     }
 }
