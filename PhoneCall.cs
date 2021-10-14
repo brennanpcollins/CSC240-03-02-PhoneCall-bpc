@@ -11,6 +11,11 @@ namespace CSC240_03_02_PhoneCall_bpc
             callFee = BASE_FEE + minutes * rate;
             return callFee;
         }
-        
+        static void Main()
+        {
+            int[] callLengths = { 2, 5 };
+            double[] rates = { 0.03, 0.12 };
+            double priceOfCall;
+        }
     }
 }
