@@ -17,6 +17,12 @@ namespace CSC240_03_02_PhoneCall_bpc
             double[] rates = { 0.03, 0.12 };
             double priceOfCall;
             WriteLine("{0, 10}{1, 10}{2, 10}", "Minutes,", "Rate", "Price");
+            for(int x = 0; x < callLengths.Length; ++x)
+                for(int y = 0; y < rates.Length; ++y)
+                {
+                    priceOfCall = CalcPhoneCallPrice(callLengths[x], rates[y]);
+                    WriteLine("{0, 10}{1, 10}{2, 10}", callLengths[x], rates[y], priceOfCall.ToString("C"));
+                }
         }
     }
 }
